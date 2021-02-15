@@ -84,9 +84,9 @@ If you have ideas for releases in the future, it is a good idea to list them her
 
 ## Contributing
 
-Please read [CONTRIBUTING.md][CONTRIB] for details of all the ways you can contribute to the project.
+Read [CONTRIBUTING.md][CONTRIB] for details of all the ways you can contribute to the project.
 
-Please read [CODE_OF_CONDUCT.md][COC] for details on our code of conduct for the project.
+Also read [CODE_OF_CONDUCT.md][COC] for details on our code of conduct for the project.
 
 
 ## Versioning
