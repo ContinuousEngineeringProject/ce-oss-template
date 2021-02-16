@@ -57,5 +57,5 @@ You can print the `GOPATH` with `echo $GOPATH`. You should see a non-empty strin
 
 ```sh
 $ echo $GOPATH
-/Users/<yourusername>/Development/go
+/Users/<yourusername>/go
 ```
