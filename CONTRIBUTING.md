@@ -2,9 +2,6 @@
 Want to hack on the :project? Awesome! This page contains information that will help you set up a development environment for working on the source code.
 
 - [Prerequisites](#Prerequisites)
-- [Set up your working copy](#Set-up-your-working-copy)
-    * [Fork the repository](#Fork-the-repository)
-    * [Clone your fork locally](#Clone-your-fork-locally)
 - [Contribution workflow](#Contribution-workflow)
     * [Cross platform development](#Cross-platform-development)
     * [Push commits](#Push-commits)
@@ -23,63 +20,17 @@ Want to hack on the :project? Awesome! This page contains information that will 
 ## Prerequisites
 To compile, test and contribute towards the project binaries you will need:
 
- - [Git](https://git-scm.com/) and a [GitHub](https://github.com/) account
- - [Go](https://golang.org/) with support for compiling to `linux/amd64`
- - [dep](https://github.com/golang/dep)
- - [pre-commit](https://pre-commit.com/#install) _optional: we use [detect-secrets](https://github.com/Yelp/detect-secrets) to help prevent secrets leaking into the code base_ 
+ - [Git](https://git-scm.com/) and a [GitHub](https://github.com/) account. Details on [configuring Git](docs/contributors/GIT_CONFIG.md/#Git-Configuration) for the project.
+ - [Go](https://golang.org/) :GoVersion with support for compiling to `linux/amd64`. Details on [configuring Go](docs/contributors/GO_CONFIG.md/#Go-Configuration) for the project.
+
 
 In most cases, install the prerequisite according to its instructions. See the next section for a note about [Go cross-compiling](#Cross platform development) support.
-
-
-## Set up your working copy
-The working copy is set up locally on your computer. It's what you'll edit, compile, and end up pushing back to GitHub. The main steps are cloning the repository and creating your fork as a remote.
-
-### Fork the repository
-If you're not familiar with this term, GitHub's [help pages](https://help.github.com/articles/fork-a-repo/) provide again a simple explanation:
-
-> A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
-
-Open the [:project repository](https://github.com/continuousengineeringproject/:repo) on GitHub and click on the "Fork" button in the top right.
-
-### Clone your fork locally
-Now open your fork repository on GitHub and copy the remote url of your fork. You can choose between HTTPS and SSH as protocol that Git should use for the following operations. HTTPS works always [if you're not sure](https://help.github.com/articles/which-remote-url-should-i-use/).
-
-Then go back to your terminal and clone your fork locally. Since :project is a Go package, it should be located at `$GOPATH/src/github.com/continuousengineeringproject/:repo`.
-
-```sh
-mkdir -p $GOPATH/src/github.com/continuousengineeringproject
-cd $GOPATH/src/github.com/continuousengineeringproject/:repo
-git clone git@github.com:<YOUR_USERNAME>/:repo.git
-cd :repo
-```
-
-Add the conventional upstream `git` remote in order to fetch changes from :repo's main master
-branch and to create pull requests:
-
-```sh
-git remote add upstream https://github.com/continuousengineeringproject/:repo.git
-```
-
-Let's check if everything went right by listing all known remotes:
-
-```sh
-git remote -v
-```
-
-The output should look similar to:
-
-```sh
-origin    git@github.com:<YOUR_USERNAME>/:repo.git (fetch)
-origin    git@github.com:<YOUR_USERNAME>/:repo.git (push)
-upstream  https://github.com/continuousengineeringproject/:repo.git (fetch)
-upstream  https://github.com/continuousengineeringproject/:repo.git (push)
-```
 
 
 ## Contribution workflow
 
 ### Create a new branch
-First, ensure that your local repository is up-to-date with the latest version of :repo. More details on [GitHub help](https://help.github.com/articles/syncing-a-fork/)
+First, ensure that your local repository is up-to-date with the latest version of :repo. More details on [GitHub help](https://help.github.com/articles/syncing-a-fork/).
 
 ```sh
 git fetch upstream

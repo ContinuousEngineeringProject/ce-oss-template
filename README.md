@@ -5,6 +5,7 @@
 :repo
 :binary
 :BINARY
+:GoVersion
 -->
 
 <!-- TODO: Update project description -->
