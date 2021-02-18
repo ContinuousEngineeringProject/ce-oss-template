@@ -9,7 +9,7 @@
 -->
 
 <!-- TODO: Update project description -->
-The :project is an open-source package created as part of the Continuous Engineering Project. The Continuous Engineering Platform is an open framework that enables continuous engineering best practices through plug & play toolsets.
+The :project is an open-source package created as part of the Continuous Engineering Project. The Continuous Engineering Project is an open framework that enables continuous engineering best practices through plug & play toolsets.
 
 [![License](https://img.shields.io/github/license/ContinuousEngineeringProject/:repo)](https://github.com/ContinuousEngineeringProject/:repo/blob/master/LICENSE)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
