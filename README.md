@@ -18,7 +18,7 @@ The :project is an open-source package created as part of the Continuous Enginee
 [![GoDoc](https://godoc.org/github.com/ContinuousEngineeringProject/:repo?status.svg)](https://godoc.org/github.com/ContinuousEngineeringProject/:repo)
 [![GitHub release](https://img.shields.io/github/v/release/ContinuousEngineeringProject/:repo?include_prereleases)](https://github.com/ContinuousEngineeringProject/:repo/releases/latest)
 [![Slack Status](https://img.shields.io/badge/slack-join_chat-white.svg?logo=slack&style=social)](https://continuousengproject.slack.com)
-
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ContinuousEngineeringProject_:repo&metric=alert_status)](https://sonarcloud.io/dashboard?id=ContinuousEngineeringProject_:repo)
 
 ## Installation
 
