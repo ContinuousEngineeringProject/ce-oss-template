@@ -1,5 +1,5 @@
 name: Static Code Analysis
-on: # Trigger analysis when pushing in master, main, or feature branches, and when creating a pull request.
+on: # Trigger analysis when pushing in main, or feature branches, and when creating a pull request.
   push:
     branches:
       - master
